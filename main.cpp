@@ -4,11 +4,11 @@
 int main(int argc, char const *argv[])
 {
     /**
-     * @brief default： cv::IMREAD_COLOR
+     * cv::IMREAD_COLOR
      * cv::IMREAD_GRAYSCALE  灰度图像
      * cv::IMREAD_ANYCOLOR
      */
-    cv::Mat src = cv::imread("./images/lena.jpg", cv::IMREAD_ANYCOLOR); // 读取一张图像
+    cv::Mat src = cv::imread("../images/lena.jpg", cv::IMREAD_ANYCOLOR); // 读取一张图像
     if (src.empty()) 
     {
         std::cout << "picture could not find." <<std::endl;
