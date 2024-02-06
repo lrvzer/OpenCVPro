@@ -1,0 +1,8 @@
+{
+    "cmake.build":"",
+    "cmake.debugConfig": {
+        "args": [
+            "..\\..\\images\\lena.jpg"
+        ]
+    },
+}
