@@ -17,7 +17,7 @@ message(STATUS "OpenCV_LIBS         = ${OpenCV_LIBS}")
 # 包含opencv相关头文件
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-file(GLOB CURRENT_DIR_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
+file(GLOB_RECURSE CURRENT_DIR_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
 foreach(FILE ${CURRENT_DIR_FILES})
     get_filename_component(FILENAME_WITHOUT_EXTENSION ${FILE} NAME_WE)
     add_executable(${FILENAME_WITHOUT_EXTENSION} ${FILE})
