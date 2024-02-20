@@ -82,7 +82,7 @@ int main(int argc, char const* argv[])
         delete pdel;
         pdel = nullptr;
     };
-    std::unique_ptr<std::string, decltype(mydella)> ps4(new std::string("hello, world!"), mydella);
+    std::unique_ptr<std::string, decltype(mydella)> ps5(new std::string("hello, world!"), mydella);
 
     // (3.1)
     // std::shared_ptr<std::string> ps;
