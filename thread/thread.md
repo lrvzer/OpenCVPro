@@ -74,3 +74,11 @@ std::ref()函数
 #### (2.3) 其他案例
 
 ### (3) 共享数据的保护案例代码
+
+
+std::async
+std::future
+std::packaged_task
+std::promise
+
+std::atomic
