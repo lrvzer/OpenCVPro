@@ -4,6 +4,26 @@
 #include <thread>
 #include <vector>
 
+// 本类用于自动释放windows下的临界区，防止忘记LeaveCriticalSection导致死锁情况的发生
+#ifdef __WINDOWS_S__
+class CWinLock
+{
+public:
+    CWinLock(CRITICAL_SECTION* pCritmp)
+    {
+        m_win_mutex = pCritmp;
+        EnterCriticalSection(m_win_mutex)
+    }
+
+    ~CWinLock()
+    {
+        LeaveCriticalSection(m_win_mutex);
+    }
+
+private:
+    CRITICAL_SECTION* m_win_mutex;
+};
+#endif
 class A
 {
 public:

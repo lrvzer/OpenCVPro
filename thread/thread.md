@@ -82,3 +82,36 @@ std::packaged_task
 std::promise
 
 std::atomic
+- load()
+- store()
+
+
+std::async和std::thread区别
+ * std::thread() 如果资源紧张，那么创建线程可能失败，那么执行std::thread()时整个程序可能崩溃
+ * std::async() 一般叫做 创建异步任务，有时候并不会创建线程
+
+一、windows临界区，类似std::mutex
+```c++
+#define __WINDOWS_S__
+
+#ifdef __WINDOWS_S__
+    CRITICAL_SECTION m_win_mutex;
+    InitializeCriticalSection(&m_win_mutex);
+    EnterCriticalSection(&m_win_mutex);
+    LeaveCriticalSection(&m_win_mutex);
+#endif
+
+```
+二、多次进入临界区实验
+
+- 在"同一个线程"中，windows中的"相同临界区变量"代表的临界区进入(EnterCriticalSection)可以被多次调用，而离开(LeaveCriticalSection)临界区时也需要多次调用
+- C++11中，不允许同一个线程中lock同一个互斥量多次，否则报异常
+
+三、自动析构技术
+
+四、std::recursive_mutex递归的独占互斥量
+
+五、带有超时的互斥量std::timed_mutex和std::recursive_timed_mutex
+
+try_lock_for(): 参数是一段时间，是等待一段时间
+try_lock_until(): 参数是一个未来的时间点
