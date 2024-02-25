@@ -1,6 +1,9 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
 
+/**
+ * 图像的加载和保存
+ */
 int main(int argc, char const* argv[])
 {
     std::string filename;
@@ -29,6 +32,7 @@ int main(int argc, char const* argv[])
      */
     cv::namedWindow("Input", cv::WINDOW_NORMAL);
     cv::imshow("Input", src);
+    cv::imwrite("./copy.jpg", src);
     cv::waitKey(0);          // 阻塞
     cv::destroyAllWindows(); // 销毁所有窗口
     return 0;
