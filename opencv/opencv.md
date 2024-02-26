@@ -15,3 +15,11 @@ Mat对象的创建和使用
 图像算数操作
 
 [opencv_arithmetic](opencv_arithmetic.cpp)
+
+图像位操作
+
+[opencv_bit](opencv_bit.cpp)
+
+像素信息统计
+
+[opencv_pixel_info](opencv_pixel_info.cpp)
