@@ -1,7 +1,7 @@
 {
     "cmake.debugConfig": {
         "args": [
-            "..\\..\\images\\lena.jpg"
+            "${workspaceFolder}/images/lena.jpg"
         ]
     },
     "files.associations": {
