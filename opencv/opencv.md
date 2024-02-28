@@ -132,3 +132,12 @@ API:
 [opencv_hist_compare](opencv_hist_compare.cpp)
 
 - cv::compareHist
+
+---
+
+图像查找表与颜色表
+
+[opencv_lut](opencv_lut.cpp)
+
+- cv::LUT
+- cv::applyColorMap
