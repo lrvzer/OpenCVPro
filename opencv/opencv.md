@@ -23,3 +23,11 @@ Mat对象的创建和使用
 像素信息统计
 
 [opencv_pixel_info](opencv_pixel_info.cpp)
+
+图形绘制与填充
+
+[opencv_draw](opencv_draw.cpp)
+
+图像通道合并与分离
+
+[opencv_channel_split_merge](opencv_channel_split_merge.cpp)
