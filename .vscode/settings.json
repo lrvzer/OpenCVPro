@@ -78,6 +78,7 @@
         "xtree": "cpp",
         "xutility": "cpp",
         "future": "cpp",
-        "condition_variable": "cpp"
+        "condition_variable": "cpp",
+        "shared_mutex": "cpp"
     },
 }
