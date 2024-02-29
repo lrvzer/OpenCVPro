@@ -135,6 +135,15 @@ API:
 
 ---
 
+图像查找表与颜色表
+
+[opencv_lut](opencv_lut.cpp)
+
+- cv::LUT
+- cv::applyColorMap
+
+---
+
 图像卷积
 卷积边缘处理
 
@@ -162,12 +171,3 @@ API:
 - 类型转换与现实支持
 
 [opencv_filter_custom](opencv_filter_custom.cpp)
-
----
-
-图像查找表与颜色表
-
-[opencv_lut](opencv_lut.cpp)
-
-- cv::LUT
-- cv::applyColorMap
