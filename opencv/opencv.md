@@ -132,3 +132,33 @@ API:
 [opencv_hist_compare](opencv_hist_compare.cpp)
 
 - cv::compareHist
+
+---
+
+图像卷积
+卷积边缘处理
+
+[opencv_convolution](opencv_filter_convolution.cpp)
+
+- cv::blur
+- cv::copyMakeBorder
+
+图像模糊
+
+高斯模糊
+盒子模糊
+
+[opencv_blur](opencv_filter_blur.cpp)
+
+- cv::GaussianBlur
+- cv::boxFilter
+
+自定义滤波器
+
+输出图像类型
+
+- 针对不同卷积核系数，图像输出类型数值范围
+- CV_32F/CV_32S
+- 类型转换与现实支持
+
+[opencv_filter_custom](opencv_filter_custom.cpp)
