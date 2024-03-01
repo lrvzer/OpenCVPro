@@ -171,3 +171,19 @@ API:
 - 类型转换与现实支持
 
 [opencv_filter_custom](opencv_filter_custom.cpp)
+
+梯度
+
+[opencv_filter_grad](opencv_filter_grad.cpp)
+
+锐化
+
+[opencv_filter_sharpen](opencv_filter_sharpen.cpp)
+
+噪声
+
+类型
+
+- 教研噪声
+- 高斯噪声
+- 其他噪声
