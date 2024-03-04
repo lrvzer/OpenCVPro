@@ -207,3 +207,23 @@ EPF滤波概述
   - 均值迁移
   - 非局部均值去噪
   - 局部均方差
+
+边缘提取
+
+[opencv_canny](opencv_canny.cpp)
+
+---
+
+二值图像
+
+- 灰度图像 单通道，取值范围0-255
+- 二值图像 单通道，取值0（黑色）与255（白色）
+
+[opencv_binary](opencv_threshold_binary.cpp)
+
+全局阈值
+
+- 均值法
+- OTSU
+
+自适应阈值
