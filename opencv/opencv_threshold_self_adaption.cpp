@@ -39,6 +39,12 @@ int main(int argc, char const* argv[])
 
     printf("otsu threshold: %.2f, triangle threshold: %.2f\n", d1, d2);
 
+    cv::adaptiveThreshold(gray, binary, 255, cv::ADAPTIVE_THRESH_GAUSSIAN_C, cv::THRESH_BINARY, 25, 10);
+    cv::imshow("ADAPTIVE_THRESH_GAUSSIAN_C", binary);
+
+    cv::adaptiveThreshold(gray, binary, 255, cv::ADAPTIVE_THRESH_MEAN_C, cv::THRESH_BINARY, 25, 10);
+    cv::imshow("ADAPTIVE_THRESH_MEAN_C", binary);
+
     cv::waitKey(0);          // 阻塞
     cv::destroyAllWindows(); // 销毁所有窗口
     return 0;
